@@ -203,9 +203,6 @@ header nav ul li a:hover {
 }
 
 /* ----------------------------------------------------
-   FUNCIONES
----------------------------------------------------- */
-/* ----------------------------------------------------
    ACCORDION SKILLS
 ---------------------------------------------------- */
 #skillsAccordion .accordion-item {
@@ -325,42 +322,42 @@ header nav ul li a:hover {
   background: #ff6f61;
 }
 .frontend:hover {
-  background: rgb(255, 64.5189873418, 46);
+  background: dark(#ff6f61);
 }
 
 .backend {
   background: #222222;
 }
 .backend:hover {
-  background: rgb(8.5, 8.5, 8.5);
+  background: dark(#222222);
 }
 
 .database {
   background: #222222;
 }
 .database:hover {
-  background: rgb(8.5, 8.5, 8.5);
+  background: dark(#222222);
 }
 
 .qa {
   background: #ff6f61;
 }
 .qa:hover {
-  background: rgb(255, 64.5189873418, 46);
+  background: dark(#ff6f61);
 }
 
 .devops {
   background: #ff6f61;
 }
 .devops:hover {
-  background: rgb(255, 64.5189873418, 46);
+  background: dark(#ff6f61);
 }
 
 .design {
   background: #ff6f61;
 }
 .design:hover {
-  background: rgb(255, 64.5189873418, 46);
+  background: dark(#ff6f61);
 }
 
 .proyecto {
