@@ -160,9 +160,10 @@ header nav ul li a:hover {
 }
 .hero p {
   margin: 10px 0;
+  color: #777777;
 }
 .dark-mode .hero p {
-  color: #f2f2f2;
+  color: #aaaaaa;
 }
 
 .sobre-mi {
@@ -189,11 +190,11 @@ header nav ul li a:hover {
   width: 80%;
   font-size: 1.25rem;
   line-height: 1.8;
-  color: #1a1a1a;
+  color: #777777;
   text-align: left;
 }
 .dark-mode .sobre-mi p {
-  color: #f2f2f2;
+  color: #aaaaaa;
 }
 @media (max-width: 768px) {
   .sobre-mi {
@@ -252,23 +253,27 @@ header nav ul li a:hover {
 }
 
 .skill-database .accordion-button {
+  border-left: 6px solid #222222;
+}
+
+.skill-qa .accordion-button {
   border-left: 6px solid #ff6f61;
 }
 
 .skill-devops .accordion-button {
-  border-left: 6px solid #222222;
+  border-left: 6px solid #ff6f61;
 }
 
 .skill-mobile .accordion-button {
-  border-left: 6px solid #ff6f61;
-}
-
-.skill-design .accordion-button {
   border-left: 6px solid #222222;
 }
 
-.skill-cms .accordion-button {
+.skill-design .accordion-button {
   border-left: 6px solid #ff6f61;
+}
+
+.skill-cms .accordion-button {
+  border-left: 6px solid #222222;
 }
 
 /* ----------------------------------------------------
@@ -278,7 +283,7 @@ header nav ul li a:hover {
   border: none;
   padding: 10px 14px 10px 5px;
   background: transparent;
-  color: #1a1a1a;
+  color: #777777;
   font-size: 0.95rem;
   transition: color 0.2s ease, background 0.2s ease;
 }
@@ -331,24 +336,31 @@ header nav ul li a:hover {
 }
 
 .database {
-  background: #ff6f61;
+  background: #222222;
 }
 .database:hover {
+  background: rgb(8.5, 8.5, 8.5);
+}
+
+.qa {
+  background: #ff6f61;
+}
+.qa:hover {
   background: rgb(255, 64.5189873418, 46);
 }
 
 .devops {
-  background: #222222;
+  background: #ff6f61;
 }
 .devops:hover {
-  background: rgb(8.5, 8.5, 8.5);
+  background: rgb(255, 64.5189873418, 46);
 }
 
 .design {
-  background: #222222;
+  background: #ff6f61;
 }
 .design:hover {
-  background: rgb(8.5, 8.5, 8.5);
+  background: rgb(255, 64.5189873418, 46);
 }
 
 .proyecto {
@@ -505,7 +517,7 @@ header nav ul li a:hover {
 .proyecto-detalle .tech {
   transition: color 0.25s ease;
   cursor: pointer;
-  color: #1a1a1a;
+  color: #777777;
 }
 .proyecto-detalle .tech:hover {
   color: #444444;

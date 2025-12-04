@@ -65,6 +65,10 @@
   border-left: 6px solid $database-color;
 }
 
+.skill-qa .accordion-button {
+  border-left: 6px solid $qa-color;
+}
+
 .skill-devops .accordion-button {
   border-left: 6px solid $devops-color;
 }
@@ -89,7 +93,7 @@
   border: none;
   padding: 10px 14px 10px 5px;
   background: transparent;
-  color: $light-text;
+  color: $light-muted;
   font-size: 0.95rem;
   transition: color 0.2s ease, background 0.2s ease;
 
@@ -157,6 +161,14 @@
 
   &:hover {
     background: dark($database-color);
+  }
+}
+
+.qa {
+  background: $qa-color;
+
+  &:hover {
+    background: dark($qa-color);
   }
 }
 

@@ -34,7 +34,7 @@
   .tech {
     transition: color 0.25s ease;
     cursor: pointer;
-    color: $light-text;
+    color: $light-muted;
 
     &:hover {
       color: $light-text-hover;

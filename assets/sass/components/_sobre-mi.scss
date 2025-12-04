@@ -26,12 +26,12 @@
     width: 80%;
     font-size: 1.25rem;
     line-height: 1.8;
-    color: $light-text;
+    color: $light-muted;
     text-align: left;
 
     // DARK MODE
     .dark-mode & {
-      color: $dark-text;
+      color: $dark-muted;
     }
   }
 
