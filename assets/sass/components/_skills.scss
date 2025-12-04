@@ -1,40 +1,94 @@
-/* Hover más oscuro automático */
+/* ----------------------------------------------------
+   FUNCIONES
+---------------------------------------------------- */
 @function dark($color) {
   @return darken($color, 10%);
 }
 
-.skills {
-  text-align: center;
-  padding: 2rem;
-
-  h2 {
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
-    font-weight: 700;
+#skillsAccordion {
+  .accordion-item {
+    border: 1px solid $color-text-muted;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: $color-background-light;
+    transition: all 0.2s ease;
   }
 
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-  }
-
-  .list-group-item {
-    padding: 1rem;
-    font-size: 1rem;
+  .accordion-button {
     font-weight: 600;
-    color: #fff;
-    border-radius: 10px;
-    cursor: default;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-size: 1.1rem;
+    background: $color-background-light;
+    color: $color-text-dark;
+    padding: 1rem 1.2rem;
+    transition: background 0.2s ease;
 
-    &:hover {
-      transform: translateY(-4px);
+    &:not(.collapsed) {
+      background: $color-background-light;
+      color: $color-text-dark;
     }
   }
 }
+
+.skill-frontend .accordion-button {
+  border-left: 6px solid $frontend-color;
+}
+
+.skill-backend .accordion-button {
+  border-left: 6px solid $backend-color;
+}
+
+.skill-database .accordion-button {
+  border-left: 6px solid $database-color;
+}
+
+.skill-devops .accordion-button {
+  border-left: 6px solid $devops-color;
+}
+
+.skill-mobile .accordion-button {
+  border-left: 6px solid $mobile-color;
+}
+
+.skill-design .accordion-button {
+  border-left: 6px solid $design-color;
+}
+
+.skill-cms .accordion-button {
+  border-left: 6px solid $cms-color;
+}
+
+
+.list-group-item {
+  border: none;
+  padding: 10px 14px 10px 5px;
+  background: transparent;
+  color: $color-text-dark;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    color: #000;
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .tech-color {
+    padding: 6px 6px 6px 5px;
+    border-radius: 4px;
+    &:hover {
+      font-weight: 400;
+      background-color: $color-background-dark;
+      color: $color-text-light;
+    }
+  }
+}
+
+/* Lista limpia */
+.accordion-body .list-group {
+  border: none;
+  box-shadow: none;
+}
+
 
 .frontend {
   background: $frontend-color;

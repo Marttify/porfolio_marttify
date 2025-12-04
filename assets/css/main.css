@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .hero {
   display: flex;
   justify-content: center;
@@ -140,34 +139,84 @@ header {
   }
 }
 
-/* Hover más oscuro automático */
-.skills {
-  text-align: center;
-  padding: 2rem;
+/* ----------------------------------------------------
+   FUNCIONES
+---------------------------------------------------- */
+#skillsAccordion .accordion-item {
+  border: 1px solid #777777;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.2s ease;
 }
-.skills h2 {
-  font-size: 2.4rem;
-  margin-bottom: 3rem;
-  font-weight: 700;
-}
-.skills .skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-}
-.skills .list-group-item {
-  padding: 1rem;
-  font-size: 1rem;
+#skillsAccordion .accordion-button {
   font-weight: 600;
-  color: #fff;
-  border-radius: 10px;
-  cursor: default;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-size: 1.1rem;
+  background: #ffffff;
+  color: #222222;
+  padding: 1rem 1.2rem;
+  transition: background 0.2s ease;
 }
-.skills .list-group-item:hover {
-  transform: translateY(-4px);
+#skillsAccordion .accordion-button:not(.collapsed) {
+  background: #ffffff;
+  color: #222222;
+}
+
+.skill-frontend .accordion-button {
+  border-left: 6px solid #ff6f61;
+}
+
+.skill-backend .accordion-button {
+  border-left: 6px solid #222222;
+}
+
+.skill-database .accordion-button {
+  border-left: 6px solid #ff6f61;
+}
+
+.skill-devops .accordion-button {
+  border-left: 6px solid #222222;
+}
+
+.skill-mobile .accordion-button {
+  border-left: 6px solid #ff6f61;
+}
+
+.skill-design .accordion-button {
+  border-left: 6px solid #222222;
+}
+
+.skill-cms .accordion-button {
+  border-left: 6px solid #ff6f61;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 14px 10px 5px;
+  background: transparent;
+  color: #222222;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.list-group-item:hover {
+  color: #000;
+  background: rgba(0, 0, 0, 0.05);
+}
+.list-group-item .tech-color {
+  padding: 6px 6px 6px 5px;
+  border-radius: 4px;
+}
+.list-group-item .tech-color:hover {
+  font-weight: 400;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Lista limpia */
+.accordion-body .list-group {
+  border: none;
+  box-shadow: none;
 }
 
 .frontend {
@@ -178,31 +227,31 @@ header {
 }
 
 .backend {
-  background: #4c8bf5;
+  background: #222222;
 }
 .backend:hover {
-  background: rgb(27.6984126984, 107.6984126984, 242.3015873016);
+  background: rgb(8.5, 8.5, 8.5);
 }
 
 .database {
-  background: #7ccf4d;
+  background: #ff6f61;
 }
 .database:hover {
-  background: rgb(97.9424778761, 183.5132743363, 49.4867256637);
+  background: rgb(255, 64.5189873418, 46);
 }
 
 .devops {
-  background: #f5b14c;
+  background: #222222;
 }
 .devops:hover {
-  background: rgb(242.3015873016, 155.9523809524, 27.6984126984);
+  background: rgb(8.5, 8.5, 8.5);
 }
 
 .design {
-  background: #bb55ff;
+  background: #222222;
 }
 .design:hover {
-  background: rgb(166.6, 34, 255);
+  background: rgb(8.5, 8.5, 8.5);
 }
 
 .proyecto {
@@ -295,7 +344,7 @@ header {
   padding: 1rem;
   border-radius: 12px;
   background: #fafafa;
-  width: 32%;
+  width: 100%;
 }
 .proyecto-detalle .tech {
   transition: color 0.25s ease;

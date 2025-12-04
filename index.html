@@ -52,7 +52,7 @@
   </header>
 
   <!-- Sección Hero / Presentación -->
-  <section class="hero text-center pt-[3rem] fade-in">
+  <section class="hero text-center fade-in">
     <div class="hero-content container">
       <h1>Hola, soy <span class="highlight">Martín Aguilar</span></h1>
       <p>Desarrollador web apasionado por crear experiencias digitales que generen impacto.</p>
@@ -66,32 +66,7 @@
   <section id="experiencia" class="proyectos container py-5">
     <div class="d-flex gap-4 flex-wrap py-5 justify-content-center">
 
-      <!-- Proyecto 1 -->
-      <article class="card zoom-in delay-1" style="width: 18rem;">
-        <img src="./assets/img/projects/screen_salesup.png" style="height: 18rem; width: 15rem;"
-          class="m-auto card-img-top" alt="Proyecto Sales Up Agency">
-        <div class="card-body">
-          <h3 class="card-title h5">Sales Up Agency</h3>
-          <p class="card-text">Full Stack Developer — Desarrollo de plataforma web y panel administrativo.</p>
-          <a href="./pages/project-front.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">
-            Ver más
-          </a>
-        </div>
-      </article>
-      <!-- Proyecto 2 -->
-      <article class="card zoom-in delay-1" style="width: 18rem;">
-        <img src="./assets/img/projects/screen_wespeak.png" class="m-auto card-img-top w-100" alt="Proyecto WeSpeak">
-        <div class="card-body">
-          <h3 class="card-title h5">WeSpeak</h3>
-          <p class="card-text">Software Engineer — Desarrollo e integración de funcionalidades para plataforma
-            conversacional.</p>
-          <a href="./pages/project-Enginner.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">
-            Ver más
-          </a>
-        </div>
-      </article>
-
-      <!-- Proyecto 3 -->
+      <!-- Experiencia de bysbit -->
       <article class="card zoom-in delay-1" style="width: 18rem;">
         <img src="./assets/img/projects/screen_bysbit.png" class="card-img-top" alt="Proyecto Bysbit">
         <div class="card-body">
@@ -102,71 +77,277 @@
           </a>
         </div>
       </article>
+      <!-- Experiencia de sales up -->
+      <article class="card zoom-in delay-1" style="width: 18rem;">
+        <img src="./assets/img/projects/screen_salesup.png" class="card-img-top" alt="Proyecto Sales Up Agency">
+        <div class="card-body">
+          <h3 class="card-title h5">Sales Up Agency</h3>
+          <p class="card-text">Full Stack Developer — Desarrollo de plataforma web y panel administrativo.</p>
+          <a href="./pages/project-front.html" class="bg-custom padding-button" title="Ver más detalles del proyecto">
+            Ver más
+          </a>
+        </div>
+      </article>
+      <!-- Experiencia de wespeak -->
+      <article class="card zoom-in delay-1" style="width: 18rem;">
+        <img src="./assets/img/projects/screen_wespeak.png" class="card-img-top w-100" alt="Proyecto WeSpeak">
+        <div class="card-body">
+          <h3 class="card-title h5">WeSpeak</h3>
+          <p class="card-text">Software Engineer — Desarrollo e integración de funcionalidades para plataforma
+            conversacional.</p>
+          <a href="./pages/project-Enginner.html" class="bg-custom padding-button"
+            title="Ver más detalles del proyecto">
+            Ver más
+          </a>
+        </div>
+      </article>
 
     </div>
   </section>
-  <section id="skills" class="skills py-5">
+  <section id="skills" class="skills py-5 container" style="max-width: 75%;">
     <h2 class="text-center mb-5 mt-5">Habilidades</h2>
 
-    <ul class="skills-list">
+    <div class="accordion my-4" id="skillsAccordion">
 
       <!-- FRONTEND -->
-      <li class="list-group-item frontend">HTML5</li>
-      <li class="list-group-item frontend">CSS3</li>
-      <li class="list-group-item frontend">Sass</li>
-      <li class="list-group-item frontend">Bootstrap 5</li>
-      <li class="list-group-item frontend">Tailwind CSS</li>
-      <li class="list-group-item frontend">JavaScript</li>
-      <li class="list-group-item frontend">React</li>
-      <li class="list-group-item frontend">Next.js</li>
-      <li class="list-group-item frontend">Vite</li>
-      <li class="list-group-item frontend">Webpack</li>
-      <li class="list-group-item frontend">Sequalize</li>
+      <div class="accordion-item skill-frontend">
+        <h2 class="accordion-header" id="headingFrontend">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontend">
+            Frontend
+          </button>
+        </h2>
+        <div id="collapseFrontend" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <ul class="list-group">
+
+              <li class="list-group-item">
+                <span class="tech-color">HTML5</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="tech-color">CSS3</span> |
+                <span class="tech-color">Sass</span> |
+                <span class="tech-color">Bootstrap 5</span> |
+                <span class="tech-color">Tailwind CSS</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="tech-color">JavaScript</span> |
+                <span class="tech-color">React</span> |
+                <span class="tech-color">Next.js</span> |
+                <span class="tech-color">NextUI</span> |
+                <span class="tech-color">Vite</span> |
+                <span class="tech-color">Webpack</span> |
+                <span class="tech-color">shadcn/ui</span> |
+                <span class="tech-color">React Icons</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="tech-color">Lucide</span> |
+                <span class="tech-color">Recharts</span> |
+                <span class="tech-color">Moment.js</span> |
+                <span class="tech-color">Day.js</span> |
+                <span class="tech-color">Date-fns</span> |
+                <span class="tech-color">Drag & Drop libraries</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="tech-color">ChatUI</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="tech-color">DiceBear</span>
+              </li>
+
+              <li class="list-group-item">
+                <span class="tech-color">ScaliDraw</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <!-- BACKEND -->
-      <li class="list-group-item backend">Node.js</li>
-      <li class="list-group-item backend">Express.js</li>
-      <li class="list-group-item backend">Python</li>
-      <li class="list-group-item backend">FastAPI</li>
-      <li class="list-group-item backend">Redis</li>
-      <li class="list-group-item backend">Drizzle ORM</li>
-      <li class="list-group-item backend">Prisma</li>
-      <li class="list-group-item backend">TypeORM</li>
-      <li class="list-group-item backend">Mongoose</li>
-      <li class="list-group-item backend">Tinybird</li>
+      <div class="accordion-item skill-backend">
+        <h2 class="accordion-header" id="headingBackend">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseBackend">
+            Backend
+          </button>
+        </h2>
+        <div id="collapseBackend" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
 
-      <!-- BASES DE DATOS -->
-      <li class="list-group-item database">PostgreSQL</li>
-      <li class="list-group-item database">MySQL</li>
-      <li class="list-group-item database">MongoDB</li>
-      <li class="list-group-item database">SQLite</li>
+              <li class="list-group-item">
+                <span class="tech-color">Node.js</span> |
+                <span class="tech-color">Express.js</span> |
+                <span class="tech-color">Python</span> |
+                <span class="tech-color">FastAPI</span> |
+                <span class="tech-color">Redis</span> |
+                <span class="tech-color">Prisma</span> |
+                <span class="tech-color">Drizzle ORM</span> |
+                <span class="tech-color">TypeORM</span> |
+                <span class="tech-color">Mongoose</span> |
+                <span class="tech-color">Tinybird</span> |
+                <span class="tech-color">LangChain</span> |
+                <span class="tech-color">OpenAI API</span> |
+                <span class="tech-color">QStash</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DATABASE -->
+      <div class="accordion-item skill-database">
+        <h2 class="accordion-header" id="headingDatabase">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseDatabase">
+            Bases de Datos
+          </button>
+        </h2>
+        <div id="collapseDatabase" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
+
+              <li class="list-group-item">
+                <span class="tech-color">PostgreSQL</span> |
+                <span class="tech-color">MySQL</span> |
+                <span class="tech-color">MongoDB</span> |
+                <span class="tech-color">SQLite</span> |
+                <span class="tech-color">PlanetScale</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <!-- DEVOPS -->
-      <li class="list-group-item devops">Git & GitHub</li>
-      <li class="list-group-item devops">Docker</li>
-      <li class="list-group-item devops">AWS</li>
-      <li class="list-group-item devops">CI/CD</li>
-      <li class="list-group-item devops">Postman</li>
+      <div class="accordion-item skill-devops">
+        <h2 class="accordion-header" id="headingDevOps">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseDevOps">
+            DevOps & Tools
+          </button>
+        </h2>
+        <div id="collapseDevOps" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
 
-      <!-- DISEÑO & GESTIÓN -->
-      <li class="list-group-item design">Figma</li>
-      <li class="list-group-item design">Jira</li>
-      <li class="list-group-item design">Trello</li>
-      <li class="list-group-item design">Flutter</li>
-      <li class="list-group-item design">Dart</li>
-      <li class="list-group-item design">Swift</li>
+              <li class="list-group-item">
+                <span class="tech-color">Git</span> |
+                <span class="tech-color">GitHub</span> |
+                <span class="tech-color">GitHub Desktop</span> |
+                <span class="tech-color">Docker</span> |
+                <span class="tech-color">AWS</span> |
+                <span class="tech-color">CI/CD</span> |
+                <span class="tech-color">Postman</span> |
+                <span class="tech-color">Turborepo</span>
+              </li>
 
-    </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="accordion-item skill-mobile">
+        <h2 class="accordion-header" id="headingMobile">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseMobile">
+            Mobile
+          </button>
+        </h2>
+        <div id="collapseMobile" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
+
+              <li class="list-group-item">
+                <span class="tech-color">Flutter</span> |
+                <span class="tech-color">Dart</span> |
+                <span class="tech-color">Swift</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESIGN & MANAGEMENT -->
+      <div class="accordion-item skill-design">
+        <h2 class="accordion-header" id="headingDesign">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseDesign">
+            Diseño & Gestión
+          </button>
+        </h2>
+        <div id="collapseDesign" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="tech-color">Figma</span> |
+                <span class="tech-color">Jira</span> |
+                <span class="tech-color">Trello</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CMS -->
+      <div class="accordion-item skill-cms">
+        <h2 class="accordion-header" id="headingCMS">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseCMS">
+            CMS & Marketing
+          </button>
+        </h2>
+        <div id="collapseCMS" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="tech-color">WordPress</span> |
+                <span class="tech-color">Shopify</span> |
+                <span class="tech-color">Hostinger</span> |
+                <span class="tech-color">Google Ads</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- Sección Sobre mí -->
-  <section id="sobre-mi" class="sobre-mi container py-5 fade-in delay-1">
-    <h2 class="mt-5">Sobre mí</h2>
-    <p>
-      Soy un desarrollador con experiencia en HTML, CSS y JavaScript.
-      Me encanta diseñar interfaces limpias y usables, y aprender nuevas tecnologías.
+
+  <section id="sobre-mi" class="sobre-mi py-5 mb-5 fade-in delay-1" style="background-color: #ff9966;">
+
+    <h2 class="mt-5 text-white">Sobre mí</h2>
+
+    <p class="text-white">
+      Soy desarrollador y me gusta crear sitios y aplicaciones que se vean bien,
+      funcionen rápido y sean fáciles de usar. Trabajo mucho con HTML, CSS y
+      JavaScript, y siempre estoy aprendiendo algo nuevo para mejorar lo que hago.
     </p>
+
+    <p class="text-white">
+      Me gusta mantener el código ordenado y simple, y meterle un poco de diseño
+      para que las cosas no solo funcionen, sino que también se sientan prolijas.
+    </p>
+
+    <p class="text-white">
+      Hoy estoy enfocado en seguir creciendo, sumando nuevas herramientas y
+      trabajando en proyectos que me desafíen a aprender más.
+    </p>
+
   </section>
+
+
 
   <!-- Sección Contacto -->
   <section id="contacto" class="contacto container py-5">
@@ -190,16 +371,16 @@
           required></textarea>
       </div>
 
-      <button title="Enviar mensaje" type="submit" class="bg-custom">Enviar</button>
+      <button title="Enviar mensaje" type="submit" class="bg-custom btn px-4 py-2">Enviar</button>
     </form>
   </section>
 
   <!-- Footer -->
-  <footer class="footer bg-dark text-white text-center py-3 fade-in delay-2">
+  <footer class="footer bg-dark text-white text-center py-3 mt-5 fade-in delay-2">
     <p>&copy; 2025 Martín Aguilar. Creador de la Web.</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/mart%C3%ADn-aguilar/" target="_blank" class="text-white">LinkedIn</a> |
-      <a href="https://github.com/" target="_blank" class="text-white">GitHub</a>
+      <a href="https://github.com/Marttify" target="_blank" class="text-white">GitHub</a>
     </div>
   </footer>
 
