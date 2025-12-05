@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .contacto {
   padding: 4rem 2rem;
   color: $light-text;

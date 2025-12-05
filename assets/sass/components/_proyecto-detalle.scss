@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .proyecto-detalle {
   display: grid;
   grid-template-areas:

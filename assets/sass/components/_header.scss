@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 header {
   background-color: $light-background;
   color: $light-text;

@@ -1,19 +1,17 @@
 // Abtracts
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/placeholders";
+@use "abstracts/index" as *;
 
 // Base
-@import "base/reset";
-@import "base/global";
+@use 'base/reset';
+@use 'base/global';
 
 // Components
-@import "components/buttons";
-@import "components/header";
-@import "components/hero";
-@import "components/sobre-mi";
-@import "components/skills";
-@import "components/proyectos";
-@import "components/contacto";
-@import "components/footer";
-@import "components/proyecto-detalle";
+@use 'components/buttons';
+@use 'components/header';
+@use 'components/hero';
+@use 'components/sobre-mi';
+@use 'components/skills';
+@use 'components/proyectos';
+@use 'components/contacto';
+@use 'components/footer';
+@use 'components/proyecto-detalle';

@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .hero {
   background-color: $light-secondary;
   color: $light-text;
