@@ -26,15 +26,8 @@
 
   p {
     width: 80%;
-    font-size: 1.25rem;
     line-height: 1.8;
-    color: $light-muted;
     text-align: left;
-
-    // DARK MODE
-    .dark-mode & {
-      color: $dark-muted;
-    }
   }
 
   @media (max-width: 768px) {

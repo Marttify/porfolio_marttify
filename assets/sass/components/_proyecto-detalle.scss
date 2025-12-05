@@ -7,6 +7,7 @@
     "titulo"
     "imagen"
     "descripcion"
+    "desafios"
     "tecnologias"
     "btn";
   grid-gap: 1.5rem;
@@ -76,13 +77,19 @@
   /* Descripción */
   p:first-of-type {
     grid-area: descripcion;
-    font-size: 1.1rem;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.6;
     color: $light-muted;
 
     .dark-mode & {
       color: $dark-muted;
     }
+  }
+
+  /* Desafíos */
+  section:last-of-type {
+    grid-area: desafios;
   }
 
   /* Tecnologías usadas */
@@ -128,6 +135,7 @@
     grid-template-areas:
       "titulo titulo"
       "imagen descripcion"
+      "desafios desafios"
       "tecnologias tecnologias"
       "btn btn";
     grid-gap: 2rem;

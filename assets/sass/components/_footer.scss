@@ -13,15 +13,6 @@
     background-color: $dark-background;
   }
 
-  p {
-    font-size: 0.9rem;
-    color: $light-muted;
-
-    .dark-mode & {
-      color: $dark-muted;
-    }
-  }
-
   .social-links a {
     color: $light-primary;
     text-decoration: none;

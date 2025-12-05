@@ -20,6 +20,16 @@ body {
    TITULOS DE SECCIÓN
 =========================== */
 
+
+p {
+  font-size: 16px;
+  color: $light-muted;
+
+  .dark-mode & {
+    color: $dark-muted;
+  }
+}
+
 section h2 {
   color: $light-text;
   margin-bottom: 15px;
@@ -43,9 +53,17 @@ section h2 {
 }
 
 /* Retrasos reutilizables */
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
 
 /* Zoom-in suave */
 .zoom-in {
@@ -57,7 +75,7 @@ section h2 {
 /* Efecto hover en tarjetas */
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 

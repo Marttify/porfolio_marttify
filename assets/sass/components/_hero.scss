@@ -26,9 +26,5 @@
 
   p {
     margin: 10px 0;
-    color: $light-muted;
-    .dark-mode & {
-      color: $dark-muted;
-    }
   }
 }

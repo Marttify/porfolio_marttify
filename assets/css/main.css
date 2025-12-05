@@ -28,6 +28,14 @@ body.dark-mode {
 /* ===========================
    TITULOS DE SECCIÓN
 =========================== */
+p {
+  font-size: 16px;
+  color: #777777;
+}
+.dark-mode p {
+  color: #aaaaaa;
+}
+
 section h2 {
   color: #1a1a1a;
   margin-bottom: 15px;
@@ -160,10 +168,6 @@ header nav ul li a:hover {
 }
 .hero p {
   margin: 10px 0;
-  color: #777777;
-}
-.dark-mode .hero p {
-  color: #aaaaaa;
 }
 
 .sobre-mi {
@@ -188,13 +192,8 @@ header nav ul li a:hover {
 }
 .sobre-mi p {
   width: 80%;
-  font-size: 1.25rem;
   line-height: 1.8;
-  color: #777777;
   text-align: left;
-}
-.dark-mode .sobre-mi p {
-  color: #aaaaaa;
 }
 @media (max-width: 768px) {
   .sobre-mi {
@@ -281,7 +280,7 @@ header nav ul li a:hover {
   padding: 10px 14px 10px 5px;
   background: transparent;
   color: #777777;
-  font-size: 0.95rem;
+  font-size: 16px;
   transition: color 0.2s ease, background 0.2s ease;
 }
 .list-group-item:hover {
@@ -360,14 +359,13 @@ header nav ul li a:hover {
   background: dark(#ff6f61);
 }
 
-.proyecto {
+.proyectos {
   margin-bottom: 20px;
-  text-align: center;
 }
-.proyecto h3 {
+.proyectos h3 {
   margin: 10px 0 5px;
 }
-.proyecto a {
+.proyectos a {
   display: inline-block;
 }
 
@@ -458,13 +456,6 @@ header nav ul li a:hover {
 .dark-mode .footer {
   background-color: #0f0f0f;
 }
-.footer p {
-  font-size: 0.9rem;
-  color: #777777;
-}
-.dark-mode .footer p {
-  color: #aaaaaa;
-}
 .footer .social-links a {
   color: #ff6f61;
   text-decoration: none;
@@ -483,7 +474,7 @@ header nav ul li a:hover {
 
 .proyecto-detalle {
   display: grid;
-  grid-template-areas: "titulo" "imagen" "descripcion" "tecnologias" "btn";
+  grid-template-areas: "titulo" "imagen" "descripcion" "desafios" "tecnologias" "btn";
   grid-gap: 1.5rem;
   max-width: 80vw;
   margin: 2rem auto;
@@ -552,12 +543,19 @@ header nav ul li a:hover {
 }
 .proyecto-detalle p:first-of-type {
   grid-area: descripcion;
-  font-size: 1.1rem;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
   color: #777777;
 }
 .dark-mode .proyecto-detalle p:first-of-type {
   color: #aaaaaa;
+}
+.proyecto-detalle {
+  /* Desafíos */
+}
+.proyecto-detalle section:last-of-type {
+  grid-area: desafios;
 }
 .proyecto-detalle {
   /* Tecnologías usadas */
@@ -603,7 +601,7 @@ header nav ul li a:hover {
 @media (min-width: 768px) {
   .proyecto-detalle {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "titulo titulo" "imagen descripcion" "tecnologias tecnologias" "btn btn";
+    grid-template-areas: "titulo titulo" "imagen descripcion" "desafios desafios" "tecnologias tecnologias" "btn btn";
     grid-gap: 2rem;
   }
   .proyecto-detalle h2,
